@@ -1,16 +1,53 @@
-# React + Vite
+# Job Portal — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React.js frontend for a full-stack MERN job portal where students can search and apply for jobs, and recruiters can post and manage listings.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
+https://job-portal-frontend-virid-nine.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Backend Repo
+https://github.com/nehakumbhar2005-sudo/job-portal-backend
 
-## React Compiler
+## 🛠 Tech Stack
+- React.js (Vite)
+- Redux Toolkit
+- Tailwind CSS
+- React Router DOM
+- Axios
+- React Hot Toast
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
+### Student
+- Register/Login with JWT auth
+- Browse and search jobs by keyword
+- View job details
+- Apply for jobs
+- Track application status (pending/accepted/rejected)
+- Update profile and skills
 
-## Expanding the ESLint configuration
+### Recruiter
+- Register/Login with JWT auth
+- Create company profile
+- Post and delete jobs
+- View all applicants per job
+- Accept or reject applications
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Folder Structure
+src/
+
+├── components/
+
+│   ├── auth/         # Login, Register
+
+│   └── shared/       # ProtectedRoute
+
+├── pages/            # All pages
+
+├── redux/            # Redux slices and store
+
+└── utils/            # API constants
+
+## 🚀 Run Locally
+npm install
+
+npm run dev
